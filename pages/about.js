@@ -41,7 +41,7 @@ const About = () => {
           <ul className="mb-4 list-disc list-inside">
             <li>
               <a
-                href="https://basicpixel.notion.site/bloggr-API-Documentation-abdb095faa4c4040835b1502d97f46e9"
+                href="https://github.com/BasicPixel/bloggr-api"
                 target="_blank"
                 rel="noreferrer"
                 className="link"
