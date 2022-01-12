@@ -1,6 +1,6 @@
 export default function Home({ posts }) {
   // const { response, loading, error } = useFetch(
-  //   "http://127.0.0.1:8000/api/posts",
+  //   "https://bloggr-django.herokuapp.com/api/posts",
   //   {}
   // );
   return (

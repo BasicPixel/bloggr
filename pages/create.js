@@ -19,7 +19,7 @@ const CreatePost = () => {
     e.preventDefault();
 
     setFetchState({ ...fetchState, loading: true });
-    fetch("http://127.0.0.1:8000/api/add-post", {
+    fetch("https://bloggr-django.herokuapp.com/api/add-post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -27,7 +27,7 @@ export default function Home({ posts }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://127.0.0.1:8000/api/posts");
+  const res = await fetch("https://bloggr-django.herokuapp.com/api/posts");
 
   // const res = await fetch("http://jsonplaceholder.typicode.com/posts");
   const data = await res.json();

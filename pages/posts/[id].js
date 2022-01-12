@@ -43,7 +43,9 @@ const Post = ({ post }) => {
 export default Post;
 
 export const getServerSideProps = async ({ params }) => {
-  const res = await fetch(`http://127.0.0.1:8000/api/post/${params.id}`);
+  const res = await fetch(
+    `https://bloggr-django.herokuapp.com/api/post/${params.id}`
+  );
   const data = await res.json();
 
   return {
