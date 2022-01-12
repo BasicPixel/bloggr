@@ -6,9 +6,11 @@ function InlinePost({ title, content, author, timestamp, id }) {
     <Container>
       <Link href={`/posts/${id}`}>
         <a>
-          <h3 className="text-2xl hover:underline">{title}</h3>
-          <p className="text-nord9 self-end hover:no-underline">{timestamp}</p>
-          <h5 className="text-nord7 mb-2">By {author}</h5>
+          <h2 className="text-2xl hover:underline">{title}</h2>
+          <p className="self-end hover:no-underline text-sm">{timestamp}</p>
+          <h3 className="mb-2">
+            By <span className="opacity-70">{author}</span>
+          </h3>
           <p className="text-nord6">{content.slice(0, 100) + "..."}</p>
         </a>
       </Link>
